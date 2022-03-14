@@ -43,25 +43,76 @@ function generatePassword() {
 
   //confirmation of user's input choice
   if (lowerC === 'Yes'){
-    window.alert('You have chosen to include lower case letters in your password');
+    window.alert('You have chosen to include lowercase letters in your password');
   }
 
   if (lowerC === 'No'){
-    window.alert('You have chosen not to include lower case letters in your password');
+    window.alert('You have chosen not to include lowercase letters in your password');
   }
 
-  //prompt and store if upper cases desired
+
+  //** 
+  //prompt for user to decide if uppercase letters are desired in password
+  upperC = window.prompt('Include uppercase letters in your password? (Yes or No)');
+  
+  //if loop that will inform user of invalid input if the user submits an input not within the accepted parameters
+  if (upperC !== 'Yes' && upperC !== 'No') {
+    window.alert("Invalid Input");
+  }
+
+  //confirmation of user's input choice
+  if (upperC === 'Yes'){
+    window.alert('You have chosen to include uppercase letters in your password');
+  }
+
+  if (upperC === 'No'){
+    window.alert('You have chosen not to include uppercase letters in your password');
+  }
 
 
+  //** 
+  //prompt for user to decide if numbers are desired in password
+  nums = window.prompt('Include numbers in your password? (Yes or No)');
+  
+  //if loop that will inform user of invalid input if the user submits an input not within the accepted parameters
+  if (nums !== 'Yes' && nums !== 'No') {
+    window.alert("Invalid Input");
+  }
 
-  //prompt and store if numbers are desired
+  //confirmation of user's input choice
+  if (nums === 'Yes'){
+    window.alert('You have chosen to include numbers in your password');
+  }
 
+  if (nums === 'No'){
+    window.alert('You have chosen not to include numbers in your password');
+  }
+  
 
-
+  //** 
   //prompt and store if special characters are desired
+  //prompt for user to decide if numbers are desired in password
+  specialC = window.prompt('Include special characters in your password? (Yes or No)');
+  
+  //if loop that will inform user of invalid input if the user submits an input not within the accepted parameters
+  if (specialC !== 'Yes' && specialC !== 'No') {
+    window.alert("Invalid Input");
+  }
+
+  //confirmation of user's input choice
+  if (specialC === 'Yes'){
+    window.alert('You have chosen to include special characters in your password');
+  }
+
+  if (specialC === 'No'){
+    window.alert('You have chosen not to include specials characters in your password');
+  }
 
 
+  //** 
+  //Append appropriate character sets to charBag
 
+  //** 
   //value that function will pass on after it runs
   return wrd;
 }
