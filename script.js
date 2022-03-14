@@ -131,8 +131,10 @@ function generatePassword() {
 
 
   //** 
-  //
-
+  //Randomly assign values from charBag to wrd
+  for (var i = 0; i < charLength; i++){
+    wrd += charBag.charAt(Math.floor(Math.random() * charBag.length));
+  }
   
 
   //** 
