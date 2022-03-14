@@ -112,6 +112,29 @@ function generatePassword() {
   //** 
   //Append appropriate character sets to charBag
 
+  //Append lowercase
+  if (lowerC === 'Yes'){
+    charBag = charBag.concat('abcdefghijklmnopqrstuvwxyz');
+  }
+
+  if (upperC === 'Yes'){
+    charBag = charBag.concat('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+  }
+
+  if (nums === 'Yes'){
+    charBag = charBag.concat('0123456789');
+  }
+
+  if (specialC === 'Yes'){
+    charBag = charBag.concat('!@#$%^&*()_+=-?~/[];:,.<>');
+  }
+
+
+  //** 
+  //
+
+  
+
   //** 
   //value that function will pass on after it runs
   return wrd;
