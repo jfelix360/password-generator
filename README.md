@@ -7,7 +7,7 @@ the security aspects of the generated password such as length and required chara
 security aspects are input, the password is generated and displayed as an alert. 
 
 ## What it Looks like
-![Screen Shot of Password Generator](./Password-Generator-SS)
+![Screen Shot of Password Generator](./Password-Generator-SS.png)
 
 ## Link to Deployed Page
 https://jfelix360.github.io/password-generator/
